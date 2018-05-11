@@ -1,2 +1,46 @@
 @import "variables"
 @import "mixins"
+
+body
+    overflow: hidden
+
+header
+    display: flex
+    height: 880px
+    justify-content: space-between
+    padding-top: 45px
+    position: relative
+    width: 100%
+
+    .row
+        justify-content: space-between
+
+.hero
+    display: flex
+    justify-content: center
+    padding-top: 175px
+    position: relative
+    text-align: center
+    width: 100%
+    z-index: 10
+
+.nav
+    align-items: center
+    z-index: 10
+
+.registration
+    padding-top: 70px
+
+    &.row
+        justify-content: center
+
+    .btn,
+    .form-control
+        height: 65px
+
+    .btn
+        width: 165px
+
+    .form-control
+        margin-right: 15px
+        width: 250px

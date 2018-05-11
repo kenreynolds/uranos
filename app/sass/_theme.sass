@@ -1,2 +1,66 @@
 @import "variables"
 @import "mixins"
+
+body
+    background-color: $theme-blue
+
+header
+    background-color: $hero-background-color
+    border-top: 5px solid $theme-yellow
+
+    h1
+        color: white
+        text-transform: uppercase
+        font-family: $custom-font
+        font-size: 36px
+
+.bold
+    font-weight: 500
+
+.nav
+    .nav-item
+        &:hover,
+        .active
+            background-color: $theme-yellow
+            border-radius: 3px
+            color: $theme-blue
+
+    .nav-link
+        color: white
+        text-decoration: none
+        text-transform: uppercase
+
+        &:hover
+            color: $theme-blue
+
+.hero
+    h2
+        color: white
+        font-family: $custom-font
+        font-size: 60px
+        font-weight: 100
+
+.registration
+    .form-control[type="text"]
+        background: rgba(0, 0, 0, 0)
+
+    .form-control
+        border: 1px solid rgba(255, 255, 255, .6)
+
+        &::placeholder
+            color: rgba(255, 255, 255, .6)
+            text-transform: uppercase
+    
+    .form-control,
+    .btn
+        border-radius: .15rem
+
+    .btn-primary
+        background-color: $theme-yellow
+        border: none
+        color: black
+        text-transform: uppercase
+
+        &:hover
+            background-color: $theme-light-yellow
+            color: white

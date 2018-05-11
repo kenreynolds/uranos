@@ -1,0 +1,94 @@
+body {
+  overflow: hidden; }
+
+header {
+  display: flex;
+  height: 880px;
+  justify-content: space-between;
+  padding-top: 45px;
+  position: relative;
+  width: 100%; }
+  header .row {
+    justify-content: space-between; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 175px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 10; }
+
+.nav {
+  align-items: center;
+  z-index: 10; }
+
+.registration {
+  padding-top: 70px; }
+  .registration.row {
+    justify-content: center; }
+  .registration .btn,
+  .registration .form-control {
+    height: 65px; }
+  .registration .btn {
+    width: 165px; }
+  .registration .form-control {
+    margin-right: 15px;
+    width: 250px; }
+
+body {
+  background-color: #191b29; }
+
+header {
+  background-color: #0a0d14;
+  border-top: 5px solid #ffd800; }
+  header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px; }
+
+.bold {
+  font-weight: 500; }
+
+.nav .nav-item:hover,
+.nav .nav-item .active {
+  background-color: #ffd800;
+  border-radius: 3px;
+  color: #191b29; }
+
+.nav .nav-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .nav .nav-link:hover {
+    color: #191b29; }
+
+.hero h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 100; }
+
+.registration .form-control[type="text"] {
+  background: rgba(0, 0, 0, 0); }
+
+.registration .form-control {
+  border: 1px solid rgba(255, 255, 255, 0.6); }
+  .registration .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase; }
+
+.registration .form-control,
+.registration .btn {
+  border-radius: .15rem; }
+
+.registration .btn-primary {
+  background-color: #ffd800;
+  border: none;
+  color: black;
+  text-transform: uppercase; }
+  .registration .btn-primary:hover {
+    background-color: #ffe347;
+    color: white; }
