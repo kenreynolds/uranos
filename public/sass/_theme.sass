@@ -15,8 +15,79 @@ header
         font-family: $custom-font
         font-size: 36px
 
+footer
+    color: white
+    text-align: center
+
+    ul
+        font-size: 18px
+        font-weight: 400
+        list-style: none
+        text-align: center
+
+.app-details,
+.team
+    .detail,
+    .team__member
+        text-align: center
+
+        h4
+            font-size: 30px
+            font-weight: 700
+
+    .section-title
+        h2
+            font-size: 60px
+            font-weight: 300
+
+        h3
+            font-size: 36px
+            font-weight: 700
+
+.button--blue,
+.button--yellow
+    border: none
+    border-radius: .15rem
+    cursor: pointer
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+
+.app-details
+    background: url("../images/background.jpg") bottom -304px left 0 no-repeat
+    background-color: $hero-background-color
+    color: white
+
+.app-download
+    background-color: white
+
+.app-intro
+    background-color: $theme-light-yellow
+
 .bold
     font-weight: 500
+
+.button--blue
+    background-color: $theme-blue
+    color: white
+
+    &:hover
+        background-color: lighten($theme-blue, 20%)
+
+.button--yellow
+    background-color: $theme-yellow
+    color: $theme-blue
+
+    &:hover
+        background-color: darken($theme-yellow, 8%)
+        color: $theme-blue
+
+.hero
+    h2
+        color: white
+        font-family: $custom-font
+        font-size: 60px
+        font-weight: 100
 
 .nav
     .nav-item
@@ -34,13 +105,6 @@ header
         &:hover
             color: $theme-blue
 
-.hero
-    h2
-        color: white
-        font-family: $custom-font
-        font-size: 60px
-        font-weight: 100
-
 .registration
     .form-control[type="text"]
         background: rgba(0, 0, 0, 0)
@@ -55,18 +119,14 @@ header
         &::placeholder
             color: rgba(255, 255, 255, .6)
             text-transform: uppercase
-    
-    .form-control,
-    .btn
+
+    .form-control
         border-radius: .15rem
 
-    .btn-primary
-        background-color: $theme-yellow
-        border: none
-        color: $theme-blue
-        font-weight: 700
-        text-transform: uppercase
+.services
+    color: white
+    font-weight: 300
 
-        &:hover
-            background-color: $theme-blue
-            color: white
+.team
+    background-color: $theme-yellow
+    color: $theme-blue

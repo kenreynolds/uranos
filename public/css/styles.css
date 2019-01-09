@@ -1,6 +1,14 @@
 body {
   overflow-x: hidden; }
 
+footer {
+  padding-bottom: 56px;
+  padding-top: 144px; }
+  footer ul li {
+    margin-bottom: 16px; }
+  footer .links {
+    margin-bottom: 112px; }
+
 header {
   display: flex;
   height: 880px;
@@ -10,6 +18,48 @@ header {
   width: 100%; }
   header .row {
     justify-content: space-between; }
+
+.app-details button,
+.app-download button {
+  height: 65px;
+  margin-top: 8px;
+  width: 228px; }
+
+.app-details,
+.team {
+  padding-bottom: 96px;
+  padding-top: 140px; }
+  .app-details .detail img,
+  .app-details .team__member img,
+  .team .detail img,
+  .team .team__member img {
+    margin-bottom: 40px; }
+  .app-details .section-title,
+  .team .section-title {
+    margin-bottom: 112px;
+    width: 100%; }
+
+.app-details {
+  overflow-y: hidden;
+  position: relative;
+  text-align: center; }
+  .app-details button {
+    margin-top: 80px; }
+
+.app-intro {
+  position: relative; }
+  .app-intro img {
+    position: absolute;
+    right: -296px;
+    top: -10px; }
+  .app-intro .app-info {
+    padding-bottom: 72px;
+    padding-top: 64px; }
+  .app-intro .app-download {
+    padding-bottom: 184px;
+    padding-top: 88px; }
+    .app-intro .app-download p {
+      margin-bottom: 48px; }
 
 .hero {
   display: flex;
@@ -28,17 +78,25 @@ header {
   padding-top: 70px; }
   .registration.row {
     justify-content: center; }
-  .registration .btn,
   .registration .form-control {
     height: 65px; }
-  .registration .btn {
+  .registration .button--yellow {
     width: 165px; }
   .registration .form-control {
     margin-right: 15px;
     width: 250px; }
 
-.services .phone {
-  margin-top: -145px; }
+.services {
+  padding-bottom: 88px;
+  padding-top: 108px; }
+  .services .service {
+    margin-bottom: 79px; }
+    .services .service .services__label {
+      margin-bottom: 30px; }
+      .services .service .services__label img {
+        margin-right: 30px; }
+  .services .phone {
+    margin-top: -253px; }
 
 body {
   background-color: #191b29; }
@@ -53,8 +111,78 @@ header {
     font-family: "Roboto", sans-serif;
     font-size: 36px; }
 
+footer {
+  color: white;
+  text-align: center; }
+  footer ul {
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    text-align: center; }
+
+.app-details .detail,
+.app-details .team__member,
+.team .detail,
+.team .team__member {
+  text-align: center; }
+  .app-details .detail h4,
+  .app-details .team__member h4,
+  .team .detail h4,
+  .team .team__member h4 {
+    font-size: 30px;
+    font-weight: 700; }
+
+.app-details .section-title h2,
+.team .section-title h2 {
+  font-size: 60px;
+  font-weight: 300; }
+
+.app-details .section-title h3,
+.team .section-title h3 {
+  font-size: 36px;
+  font-weight: 700; }
+
+.button--blue,
+.button--yellow {
+  border: none;
+  border-radius: .15rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.app-details {
+  background: url("../images/background.jpg") bottom -304px left 0 no-repeat;
+  background-color: #0a0d14;
+  color: white; }
+
+.app-download {
+  background-color: white; }
+
+.app-intro {
+  background-color: #ffe347; }
+
 .bold {
   font-weight: 500; }
+
+.button--blue {
+  background-color: #191b29;
+  color: white; }
+  .button--blue:hover {
+    background-color: #404568; }
+
+.button--yellow {
+  background-color: #ffd800;
+  color: #191b29; }
+  .button--yellow:hover {
+    background-color: #d6b500;
+    color: #191b29; }
+
+.hero h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 100; }
 
 .nav .nav-item:hover,
 .nav .nav-item .active {
@@ -69,12 +197,6 @@ header {
   .nav .nav-link:hover {
     color: #191b29; }
 
-.hero h2 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  font-weight: 100; }
-
 .registration .form-control[type="text"] {
   background: rgba(0, 0, 0, 0); }
 
@@ -86,16 +208,13 @@ header {
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase; }
 
-.registration .form-control,
-.registration .btn {
+.registration .form-control {
   border-radius: .15rem; }
 
-.registration .btn-primary {
+.services {
+  color: white;
+  font-weight: 300; }
+
+.team {
   background-color: #ffd800;
-  border: none;
-  color: #191b29;
-  font-weight: 700;
-  text-transform: uppercase; }
-  .registration .btn-primary:hover {
-    background-color: #191b29;
-    color: white; }
+  color: #191b29; }

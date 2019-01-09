@@ -4,6 +4,7 @@
     "description": "HTML5 & CSS3 website template",
     "main": "index.html",
     "scripts": {
+        "serve": "live-server public/",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Ken Reynolds",

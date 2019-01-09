@@ -4,20 +4,20 @@ var browserSync = require('browser-sync');
 
 // Compile SASS files into CSS
 gulp.task('sass', function () {
-    return gulp.src('app/sass/styles.sass')
-        .pipe(sass({ includePaths: ['app/sass'] }))
-        .pipe(gulp.dest('app/css'));
+    return gulp.src('public/sass/styles.sass')
+        .pipe(sass({ includePaths: ['public/sass'] }))
+        .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('browserSync', function () {
     browserSync.init(["app/css/*.css"], {
         server: {
-            baseDir: "app"
+            baseDir: "public"
         }
     });
 });
 
 gulp.task('default', ['sass', 'browserSync'], function () {
-    gulp.watch("app/sass/*.sass", ['sass']);
-    gulp.watch("app/*.html", browserSync.reload);
+    gulp.watch("public/sass/*.sass", ['sass']);
+    gulp.watch("public/*.html", browserSync.reload);
 });
