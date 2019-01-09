@@ -1,16 +1,17 @@
 {
-  "name": "uranos",
-  "version": "1.0.0",
-  "description": "HTML5 & CSS3 website template",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ken Reynolds",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
-  }
+    "name": "uranos",
+    "version": "1.0.0",
+    "description": "HTML5 & CSS3 website template",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ken Reynolds",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^4.0.1",
+        "live-server": "^1.2.1"
+    }
 }
