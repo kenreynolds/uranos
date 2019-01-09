@@ -5,6 +5,7 @@ body
     background-color: $theme-blue
 
 header
+    background: url("../images/background.jpg") center no-repeat
     background-color: $hero-background-color
     border-top: 5px solid $theme-yellow
 
@@ -47,6 +48,10 @@ header
     .form-control
         border: 1px solid rgba(255, 255, 255, .6)
 
+        &:focus,
+        &:hover
+            border-color: white
+
         &::placeholder
             color: rgba(255, 255, 255, .6)
             text-transform: uppercase
@@ -58,9 +63,10 @@ header
     .btn-primary
         background-color: $theme-yellow
         border: none
-        color: black
+        color: $theme-blue
+        font-weight: 700
         text-transform: uppercase
 
         &:hover
-            background-color: $theme-light-yellow
+            background-color: $theme-blue
             color: white

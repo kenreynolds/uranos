@@ -1,5 +1,5 @@
 body {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 header {
   display: flex;
@@ -37,10 +37,14 @@ header {
     margin-right: 15px;
     width: 250px; }
 
+.services .phone {
+  margin-top: -145px; }
+
 body {
   background-color: #191b29; }
 
 header {
+  background: url("../images/background.jpg") center no-repeat;
   background-color: #0a0d14;
   border-top: 5px solid #ffd800; }
   header h1 {
@@ -76,6 +80,8 @@ header {
 
 .registration .form-control {
   border: 1px solid rgba(255, 255, 255, 0.6); }
+  .registration .form-control:focus, .registration .form-control:hover {
+    border-color: white; }
   .registration .form-control::placeholder {
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase; }
@@ -87,8 +93,9 @@ header {
 .registration .btn-primary {
   background-color: #ffd800;
   border: none;
-  color: black;
+  color: #191b29;
+  font-weight: 700;
   text-transform: uppercase; }
   .registration .btn-primary:hover {
-    background-color: #ffe347;
+    background-color: #191b29;
     color: white; }
