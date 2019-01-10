@@ -169,14 +169,16 @@ footer {
   background-color: #191b29;
   color: white; }
   .button--blue:hover {
-    background-color: #404568; }
+    background-color: #404568;
+    transition: all 0.25s ease-in-out 0s; }
 
 .button--yellow {
   background-color: #ffd800;
   color: #191b29; }
   .button--yellow:hover {
-    background-color: #d6b500;
-    color: #191b29; }
+    background-color: #ffe866;
+    color: #191b29;
+    transition: all 0.25s ease-in-out 0s; }
 
 .hero h2 {
   color: white;
@@ -188,14 +190,16 @@ footer {
 .nav .nav-item .active {
   background-color: #ffd800;
   border-radius: 3px;
-  color: #191b29; }
+  color: #191b29;
+  transition: all 0.25s ease-in-out 0s; }
 
 .nav .nav-link {
   color: white;
   text-decoration: none;
   text-transform: uppercase; }
   .nav .nav-link:hover {
-    color: #191b29; }
+    color: #191b29;
+    transition: all 0.25s ease-in-out 0s; }
 
 .registration .form-control[type="text"] {
   background: rgba(0, 0, 0, 0); }
@@ -203,7 +207,8 @@ footer {
 .registration .form-control {
   border: 1px solid rgba(255, 255, 255, 0.6); }
   .registration .form-control:focus, .registration .form-control:hover {
-    border-color: white; }
+    border-color: white;
+    transition: all 0.25s ease-in-out 0s; }
   .registration .form-control::placeholder {
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase; }

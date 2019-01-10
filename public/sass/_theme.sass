@@ -1,5 +1,4 @@
 @import "variables"
-@import "mixins"
 
 body
     background-color: $theme-blue
@@ -73,14 +72,16 @@ footer
 
     &:hover
         background-color: lighten($theme-blue, 20%)
+        transition: all 0.25s ease-in-out 0s
 
 .button--yellow
     background-color: $theme-yellow
     color: $theme-blue
 
     &:hover
-        background-color: darken($theme-yellow, 8%)
+        background-color: lighten($theme-light-yellow, 6%)
         color: $theme-blue
+        transition: all 0.25s ease-in-out 0s
 
 .hero
     h2
@@ -96,6 +97,7 @@ footer
             background-color: $theme-yellow
             border-radius: 3px
             color: $theme-blue
+            transition: all 0.25s ease-in-out 0s
 
     .nav-link
         color: white
@@ -104,6 +106,7 @@ footer
 
         &:hover
             color: $theme-blue
+            transition: all 0.25s ease-in-out 0s
 
 .registration
     .form-control[type="text"]
@@ -115,6 +118,7 @@ footer
         &:focus,
         &:hover
             border-color: white
+            transition: all 0.25s ease-in-out 0s
 
         &::placeholder
             color: rgba(255, 255, 255, .6)
